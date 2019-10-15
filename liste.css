@@ -1,0 +1,158 @@
+body
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 1000%;
+	margin:0;
+	padding:0;
+	background-image: url("images/enc.jpg");
+	background-size: cover;
+	color: white;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    width: 1800px;
+    
+}
+thead
+{
+    background-color: #3f87a6;
+    color: #fff;
+}
+
+th
+{
+	border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+}
+
+h1
+{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	font-size: 60px;
+	font-family: 'Cookie', cursive;
+}
+.nom,.image,.cat,.descb,.descs,.descu,.descn,.link {
+    border: 1px solid rgb(190, 190, 190);
+    height: 50px; width: 150px;
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    overflow: hidden;
+}
+
+.nom,.image,.cat,.descb,.descs,.descu,.descn,.link  {
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.pic
+{
+	width: 45px; height: 45px;
+	border-radius: 5px 5px 5px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+
+}
+
+
+
+.link
+{
+	background: linear-gradient(grey,skyblue);
+}
+
+.descb:hover{background-color:green;}
+.descs:hover{background-color:orange;}
+.descu:hover{background-color:red;}
+.descn:hover{background-color:blue;}
+
+#zoom {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#zoom:hover{
+	-webkit-transform: scale(8);
+	transform: scale(8);
+	z-index: 1;
+	position: absolute;
+	overflow: hidden;
+	
+}
+
+.buy{
+
+	background-color:blue;
+}
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 100px; width: 100%;
+	background-color: skyblue;
+	box-shadow: 5px 5px 5px white;
+	
+}
+.leg
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 80px;width: 100%;
+	border: 1px solid rgb(190, 190, 190);
+    text-align: center;
+    padding: 80px 15px;
+    
+}
+
+.buy{background-color:green;}
+.selectionnés{background-color:orange;}
+.urgent{background-color:red;}
+.normal{background-color:blue;}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+	width: 700px; 
+	height: 700px;
+	border: 4px solid skyblue;
+	border-radius: 10%;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Kalam', cursive;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+div
+{
+	display: flex;
+	justify-content: center;
+	height: 50px; width: 100%;
+	font-size: 40px;
+	background: linear-gradient(grey,skyblue); 
+}
